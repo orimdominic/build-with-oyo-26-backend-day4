@@ -1,13 +1,13 @@
 # Build With Oyo '26
 
-## Module: Consume API with the Fetch API
+## Module: Consume API with Axios
 
 ## Instructions
 
-Clone the repository and checkout to the branch `1-api-with-fetch` using the command
+Clone the repository and checkout to the branch `2-api-with-axios` using the command
 
 ```bash
-git checkout 1-api-with-fetch`
+git checkout 2-api-with-axios`
 ```
 
 Install the dependencies by running

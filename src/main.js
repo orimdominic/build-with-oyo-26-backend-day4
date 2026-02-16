@@ -1,26 +1,19 @@
+import axios from "axios";
+
 const btnFetchUsers = document.getElementById("btn_fetch_users");
 
 btnFetchUsers.addEventListener("click", run);
-
-async function fetchUsers() {
-  return fetch("https://jsonplaceholder.typicode.com/users", {
-    method: "get",
-  }).then((response) => response.json());
-}
 
 async function run() {
   const usersListEl = document.getElementById("ul_users_list");
   usersListEl.textContent = "" // clear list
 
   try {
-    const usersList = await fetch(
+    const response = await axios.get(
       "https://jsonplaceholder.typicode.com/users",
-      {
-        method: "get",
-      },
-    ).then((response) => response.json());
+    )
 
-    usersList.forEach((user) => {
+    response.data.forEach((user) => {
       const li = document.createElement("li");
       li.style.paddingTop = ".5rem"
       li.textContent = user.name;

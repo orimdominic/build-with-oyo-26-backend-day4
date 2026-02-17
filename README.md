@@ -1,14 +1,14 @@
 # Build With Oyo '26
 
-## Module: Environment Variables with Node.js
+## Module: Environment Variables with dotenv
 
 ## Instructions
 
-Clone the repository and checkout to the branch `3.2-express-envvar-node` using the command
+Clone the repository and checkout to the branch `3.3-express-envvar-dotenv` using the command
 Make sure you are using Node.js version `>=22.22.0`
 
 ```bash
-git checkout 3.2-express-envvar-node`
+git checkout 3.3-express-envvar-dotenv`
 ```
 
 Install the dependencies by running

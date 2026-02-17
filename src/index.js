@@ -1,4 +1,7 @@
 import express from "express";
+import process from "node:process"
+
+process.loadEnvFile() // must be run first so that the variables can be loaded
 
 const app = express();
 
@@ -72,12 +75,12 @@ app.delete("/contacts/:id", function (req, res) {
   return res.status(204).send();
 });
 
-// Listen on port 8000
-app.listen(8000, function (error) {
+// Listen on port process.env.KEY
+app.listen(process.env.PORT, function (error) {
   if(error){
     console.error(error)
     process.exit(1)
   }
 
-  console.log("Listening on port :8000")
+  console.log(`Listening on port ${process.env.PORT}`)
 })

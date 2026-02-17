@@ -1,13 +1,14 @@
 # Build With Oyo '26
 
-## Module: Consume API with Axios
+## Module: Environment Variables with Node.js
 
 ## Instructions
 
-Clone the repository and checkout to the branch `2-api-with-axios` using the command
+Clone the repository and checkout to the branch `3.2-express-envvar-node` using the command
+Make sure you are using Node.js version `>=22.22.0`
 
 ```bash
-git checkout 2-api-with-axios`
+git checkout 3.2-express-envvar-node`
 ```
 
 Install the dependencies by running
@@ -21,5 +22,5 @@ Run the code
 ```bash
 npm run dev
 ```
-
+Set up your .env file with the `PORT` environment variable.
 Visit the URL displayed in the terminal using your browser.
